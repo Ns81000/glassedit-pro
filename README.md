@@ -46,19 +46,19 @@ No popups. No panels. No toolbars. No accounts. No saving. Just pure, instant te
 
 ## 🚀 Quick Install (One Command)
 
-### Windows (PowerShell)
+### Windows
 
-```powershell
-git clone https://github.com/Ns81000/glassedit-pro.git "$env:USERPROFILE\glassedit-pro" && Start-Process "chrome://extensions"
+```
+git clone https://github.com/Ns81000/glassedit-pro.git %USERPROFILE%\glassedit-pro
 ```
 
-### macOS / Linux (Terminal)
+### macOS / Linux
 
 ```bash
-git clone https://github.com/Ns81000/glassedit-pro.git ~/glassedit-pro && open "chrome://extensions"
+git clone https://github.com/Ns81000/glassedit-pro.git ~/glassedit-pro
 ```
 
-Then follow the 3 steps below to load it into Chrome.
+Then open `chrome://extensions` in your browser and follow the 3 steps below to load it.
 
 ---
 
