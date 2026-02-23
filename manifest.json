@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "GlassEdit Pro",
+  "version": "2.1.0",
+  "description": "Click to edit any text on any webpage. Simple. Fun.",
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "GlassEdit Pro — Click to toggle editing"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,72 @@
+﻿/* ============================================================
+   GlassEdit Pro - Minimal Styles
+   Highlight overlay and editing indicator.
+   ============================================================ */
+
+/* ---- Highlight Overlay  follows hovered elements ---- */
+.ge-highlight-overlay {
+  position: fixed;
+  z-index: 2147483645;
+  background: rgba(45, 140, 255, 0.10);
+  border: 2px solid rgba(45, 140, 255, 0.65);
+  border-radius: 6px;
+  pointer-events: none;
+  box-shadow: 0 0 0 3px rgba(45, 140, 255, 0.12),
+              inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition: top 0.06s ease, left 0.06s ease,
+              width 0.06s ease, height 0.06s ease;
+  display: none;
+}
+
+/* Tag label on the highlight */
+.ge-highlight-label {
+  position: absolute;
+  top: -24px;
+  left: 6px;
+  background: rgba(45, 140, 255, 0.88);
+  color: #fff;
+  font: 600 10px/1 -apple-system, 'Segoe UI', Arial, sans-serif;
+  padding: 3px 10px;
+  border-radius: 100px;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.02em;
+}
+
+/* ---- Element being edited ---- */
+.ge-editing {
+  outline: 2px solid rgba(45, 140, 255, 0.6) !important;
+  outline-offset: 2px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 4px rgba(45, 140, 255, 0.10) !important;
+}
+
+/* ---- Body indicator when edit mode is ON ---- */
+.ge-active-mode {
+  cursor: text !important;
+}
+
+/* Elements keep text cursor when hovered */
+.ge-active-mode * {
+  cursor: text !important;
+}
+
+/* Editable element gets text cursor */
+.ge-editing,
+.ge-editing * {
+  cursor: text !important;
+}
+
+/* ---- Accessibility fallback ---- */
+@media (prefers-reduced-transparency: reduce) {
+  .ge-highlight-overlay {
+    background: rgba(45, 140, 255, 0.20);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .ge-highlight-label {
+    background: rgba(0, 90, 220, 0.9);
+  }
+}
